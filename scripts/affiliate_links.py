@@ -76,33 +76,58 @@ def load_links():
 
 
 def inject_affiliate_links(article_path):
-    """Find tool mentions in an article and add affiliate links"""
+    """Find tool mentions in an article and add affiliate links.
+    Only injects into the body — skips title line and frontmatter."""
     links = load_links()
     content = article_path.read_text()
     modified = False
 
-    for tool_name, affiliate_url in links.items():
-        # Match the tool name as a standalone word/phrase, not already linked
-        # Skip if tool name already appears in a markdown link [Tool Name](url)
-        if f'[{tool_name}]' in content:
+    # Split into lines, skip title (first # heading) and frontmatter
+    lines = content.split("\n")
+    in_frontmatter = False
+    title_line_idx = None
+    body_start_idx = 0
+
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if i == 0 and stripped == "---":
+            in_frontmatter = True
             continue
-        # Simple replacement: find first occurrence of the tool name and wrap it
-        idx = content.find(tool_name)
+        if in_frontmatter:
+            if stripped == "---":
+                in_frontmatter = False
+                body_start_idx = i + 1
+            continue
+        if stripped.startswith("# ") and title_line_idx is None:
+            title_line_idx = i
+            body_start_idx = i + 1
+            continue
+
+    # Only process lines from body_start_idx onward
+    body_lines = lines[body_start_idx:]
+    body_content = "\n".join(body_lines)
+
+    for tool_name, affiliate_url in sorted(links.items(), key=lambda x: -len(x[0])):
+        # Skip if tool name already appears in a markdown link
+        if f'[{tool_name}]' in body_content:
+            continue
+        # Find first occurrence in body only
+        idx = body_content.find(tool_name)
         if idx == -1:
             continue
         replacement = f'[{tool_name}]({affiliate_url})'
-        new_content = content[:idx] + replacement + content[idx + len(tool_name):]
-        
-        if new_content != content:
-            modified = True
-            content = new_content
-    
-    if modified:
-        article_path.write_text(content)
+        body_content = body_content[:idx] + replacement + body_content[idx + len(tool_name):]
+
+    # Reconstruct
+    new_content = "\n".join(lines[:body_start_idx]) + "\n" + body_content
+
+    if new_content != content:
+        article_path.write_text(new_content)
         print(f"  ✓ Injected affiliate links into {article_path.name}")
+        modified = True
     else:
         print(f"  - No new tool mentions found in {article_path.name}")
-    
+
     return modified
 
 
