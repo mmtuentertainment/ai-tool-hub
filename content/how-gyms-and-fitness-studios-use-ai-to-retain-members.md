@@ -22,7 +22,7 @@ Before picking tools, understand why members churn:
 
 AI tools can directly address #1 and #2 — the 65% of churn that's about engagement and personalization. They can't fix a dirty gym or a member who moved across the country.
 
-## Tool 1: Gym CRM with AI Engagement — Zen Planner
+## Tool 1: Gym CRM with AI Engagement — [Zen Planner](https://zenplanner.com/?ref=AITOOLHUB)
 
 Zen Planner is a gym-specific CRM that added AI features in 2025: automated member journeys, predictive churn alerts, and personalized communication. The AI flags members whose attendance pattern matches others who previously churned — usually a drop-off in visit frequency over 3-4 weeks.
 
@@ -32,7 +32,7 @@ Zen Planner is a gym-specific CRM that added AI features in 2025: automated memb
 
 The predictive churn alerts are the killer feature. Instead of finding out someone cancelled, you get an alert: "Sarah has visited 1x in the last 14 days (down from 4x/week). Her churn risk is HIGH. Suggested action: personal check-in." That 30-second text to Sarah saves a $50/month member.
 
-## Tool 2: Automated Class Reminders + Waitlists — PushPress
+## Tool 2: Automated Class Reminders + Waitlists — [PushPress](https://pushpress.com/?ref=AITOOLHUB)
 
 PushPress is another gym-specific platform with strong automation. When a member books a class, they get a reminder 2 hours before. If the class fills up, the waitlist auto-promotes people when spots open. When someone hasn't booked in 7 days, they get a "we miss you" message with this week's class recommendations.
 
@@ -42,7 +42,7 @@ PushPress is another gym-specific platform with strong automation. When a member
 
 The AI angle: PushPress personalizes the "we miss you" message based on the member's preferred class types and times. "Hey Marcus, we noticed you haven't made it to your usual 6am HIIT — here's this week's schedule, including two 6am slots." That personalization is what makes it feel like a human reached out, not a bot.
 
-## Tool 3: Email + SMS Marketing Automation — Brevo
+## Tool 3: Email + SMS Marketing Automation — [Brevo](https://brevo.com/?ref=AITOOLHUB)
 
 For gyms that don't use a gym-specific CRM, Brevo is the best general-purpose option. You can set up:
 - Welcome sequence for new members (Day 0: welcome, Day 3: class schedule, Day 7: trainer intro, Day 14: first milestone check-in)
@@ -55,7 +55,7 @@ For gyms that don't use a gym-specific CRM, Brevo is the best general-purpose op
 
 The AI features (subject line generation, send-time optimization, content suggestions) shave time off campaign creation. The real value is the automation builder — once set up, it runs forever.
 
-## Tool 4: Member App with AI Coach — Trainerize
+## Tool 4: Member App with AI Coach — [Trainerize](https://trainerize.com/?ref=AITOOLHUB)
 
 Trainerize is a personal training platform that lets you assign workouts, track progress, and communicate with members in-app. The AI coach feature generates personalized workout modifications based on member feedback ("that was too hard," "my knee hurt during squats") and progress data.
 
@@ -65,7 +65,7 @@ Trainerize is a personal training platform that lets you assign workouts, track 
 
 Members who use the app 3+ times per week have 40% lower churn. The app creates a daily touchpoint that keeps the gym top-of-mind, and the AI adjustments make workouts feel personalized without trainer time.
 
-## Tool 5: AI Chatbot for Front Desk — Tidio
+## Tool 5: AI Chatbot for Front Desk — [Tidio](https://tidio.com/?ref=AITOOLHUB)
 
 For after-hours inquiries ("what are your rates?", "do you have childcare?", "can I freeze my membership?"), Tidio's AI chatbot handles common questions instantly. This matters because 40% of prospect inquiries come outside business hours, and a 2am question that gets no response until morning is a prospect who Googled a competitor instead.
 

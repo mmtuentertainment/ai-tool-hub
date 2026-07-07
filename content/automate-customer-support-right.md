@@ -63,28 +63,28 @@ These are the tickets where human judgment, empathy, and authority matter. AI pr
 
 ## Tool Stack That Actually Works
 
-### 1. Intercom Fin ($0.99/resolution)
+### 1. [Intercom Fin](https://intercom.com/fin?ref=AITOOLHUB) ($0.99/resolution)
 
 Intercom's AI agent, Fin, is the best-in-class for this setup. It handles Tier 0 autonomously, escalates to humans with full context, and learns from corrections. You're paying per resolved ticket, not per month — which aligns incentives (it only gets paid when it actually helps).
 
 **Best for:** Businesses with 100+ support tickets/month
 **Cost:** $0.99 per AI-resolved ticket. If it handles 200 tickets/month, that's $198 — cheaper than a part-time support person.
 
-### 2. Zendesk Answer Bot (included with Zendesk)
+### 2. [Zendesk](https://zendesk.com/?ref=AITOOLHUB) Answer Bot (included with Zendesk)
 
 If you're already on Zendesk, Answer Bot is included. It's less sophisticated than Fin but handles the basics well. The advantage is that it's native to your existing workflow.
 
 **Best for:** Businesses already using Zendesk
 **Cost:** Included in Zendesk plans ($55/mo+)
 
-### 3. Tidio (Free - $39/mo)
+### 3. [Tidio](https://tidio.com/?ref=AITOOLHUB) (Free - $39/mo)
 
 Tidio's AI chatbot is the best budget option. It handles FAQs, order tracking, and basic routing. The free tier covers up to 100 conversations/month.
 
 **Best for:** Small businesses under 100 tickets/month
 **Cost:** Free tier available; $39/mo for Lyro AI
 
-### 4. Help Scout (Free tier, then $20/user/month)
+### 4. [Help Scout](https://helpscout.com/?ref=AITOOLHUB) (Free tier, then $20/user/month)
 
 Help Scout is less AI-heavy but excels at the human side. Its AI features (summarize, draft suggestions) assist humans rather than replacing them — which is the right model for high-touch support.
 

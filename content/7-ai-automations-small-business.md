@@ -26,14 +26,14 @@ New form submission →
   All leads logged in CRM with AI-generated notes
 ```
 
-**Tools:** Zapier ($20/mo) + your form tool + OpenAI API ($5-10/mo for lead scoring) + your CRM
+**Tools:** [Zapier](https://zapier.com/?ref=AITOOLHUB) ($20/mo) + your form tool + OpenAI API ($5-10/mo for lead scoring) + your CRM
 
 **How to set it up:**
 1. Connect your form (Typeform, Google Forms, website form) to Zapier
 2. Add an OpenAI step that analyzes the submission: "Score this lead 1-10 based on fit. Respond with JSON: {score, reason, recommended_action}"
 3. Add conditional branches based on score
 4. Hot leads (8+) trigger SMS via Twilio
-5. All leads get logged in your CRM (HubSpot free works)
+5. All leads get logged in your CRM ([HubSpot](https://hubspot.com/?ref=AITOOLHUB) free works)
 
 **Real result:** The roofing company went from spending 6 hours/week on lead intake to 1 hour (just reviewing hot leads). They closed 30% more deals because hot leads got instant responses.
 
@@ -113,7 +113,7 @@ Daily check: new reviews across Google, Yelp, Facebook →
 Meeting ends (Zoom/Meet/Teams recording) →
   AI transcribes the meeting →
   Extracts: decisions made, action items, owners, deadlines →
-  Creates tasks in your project tool (Asana, Notion, Trello) →
+  Creates tasks in your project tool (Asana, [Notion](https://notion.so/?ref=AITOOLHUB), Trello) →
   Sends summary to all attendees →
   Sets reminders for action item deadlines →
   Follows up on incomplete items 2 days before deadline
@@ -162,7 +162,7 @@ New customer signs up →
   All emails personalized based on customer's industry and usage
 ```
 
-**Tools:** Your email tool (Brevo, Mailchimp) + customer data + OpenAI for personalization ($10/mo)
+**Tools:** Your email tool ([Brevo](https://brevo.com/?ref=AITOOLHUB), Mailchimp) + customer data + OpenAI for personalization ($10/mo)
 
 **Real result:** The SaaS app improved 30-day retention from 60% to 78%. The automated onboarding felt MORE personal than the manual version because it was customized per user, not one-size-fits-all.
 

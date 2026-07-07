@@ -35,8 +35,8 @@ For our app:
 
 ### 2. Development Tools: $95/month
 
-- **Cursor (AI code editor):** $20/month
-- **Claude Pro (for architecture decisions):** $20/month
+- **[Cursor](https://cursor.sh/?ref=AITOOLHUB) (AI code editor):** $20/month
+- **[Claude Pro](https://claude.ai/?ref=AITOOLHUB) (for architecture decisions):** $20/month
 - **GitHub Pro (private repos):** $4/month
 - **Vercel (hosting + deployment):** $20/month (Pro)
 - **Supabase (database + auth):** $25/month (Pro)
