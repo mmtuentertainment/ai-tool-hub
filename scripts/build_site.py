@@ -190,6 +190,13 @@ def load_template():
         return f.read()
 
 
+def load_blog_template():
+    """Load the blog article HTML template (relative paths for /blog/ pages)"""
+    template_path = TEMPLATES_DIR / "blog_base.html"
+    with open(template_path) as f:
+        return f.read()
+
+
 def slugify(text):
     """Convert title to URL slug"""
     slug = text.lower().strip()
@@ -222,7 +229,7 @@ def build_index_page(template, articles):
         title = article["title"]
         date = article.get("date", "")
         desc = article.get("description", "")
-        card = f"""<a href="/blog/{slug}.html" class="article-card">
+        card = f"""<a href="blog/{slug}.html" class="article-card">
 <h2>{html.escape(title)}</h2>
 <div class="meta">{date}</div>
 <p>{html.escape(desc[:150])}...</p>
@@ -253,6 +260,7 @@ def build():
         shutil.copytree(STATIC_DIR, OUTPUT_DIR / "static")
 
     template = load_template()
+    blog_template = load_blog_template()
 
     # Process all markdown articles
     articles = []
@@ -273,8 +281,8 @@ def build():
             "tags": meta.get("tags", ""),
         })
 
-        # Build article page
-        page_html = build_article_page(template, title, body_html, meta)
+        # Build article page (use blog template with relative paths)
+        page_html = build_article_page(blog_template, title, body_html, meta)
 
         # Write to /blog/slug.html
         blog_dir = OUTPUT_DIR / "blog"
